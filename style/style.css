@@ -1,0 +1,102 @@
+/* Color theme not bright,2-3 colors animation type=hover-slide in */
+*{
+  color: white;
+  font-family: 'Libre Franklin', sans-serif !important;
+}
+body{
+  background-color: rgb(51 54 70);
+  /* background-image: url(https://wallpaperbat.com/img/255360-dark-space-wallpaper-hd.jpg); */
+}
+/* Landing Section */
+#landing .row{
+  background-color: rgb(18 21 36);  border-radius: 30px;
+}
+.rpic{
+  /* My img of Myself */
+  padding: 2px;
+  width: 500px;
+}
+/* nav bar toggler color */
+.navbar-light .navbar-toggler{
+  color: rgb(254, 255, 251);
+}
+/* About Section */
+#about .row{
+  background-color: rgb(18 21 36);
+  border-radius: 30px;
+  padding: 0 100px 0 100px;
+}
+/* Skills and Education Section */
+#skills-education .row{
+  background-color: rgb(18 21 36);
+  border-radius: 30px;
+}
+.padwords{
+  /* padding-left: 200px; */
+  border-left: 5px solid white;
+  border-radius: 14px;
+}
+.padwords h4{
+  padding-left: 5px;
+}
+/* To remove dots because I dont know how to in bootstrap */
+.list-no-style li{
+  list-style: none;
+}
+/* Portfolio Section */
+/* #portfolio .row{
+  background-color: rgb(18 21 36);
+  border-radius: 30px;
+} */
+.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.projects-container img{
+  max-height:400px;
+  max-width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+}
+/* Testimonials Section */
+#testimonials .row{
+    background:
+      /* top, transparent red, faked with gradient */
+      linear-gradient(
+        rgb(18 21 36),
+        rgba(51, 54, 70, 0.45)
+      ),
+      /* bottom, image */
+      url(https://picsum.photos/1920/1080);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position:cover;
+      border-radius: 30px;
+}
+.img-testimonials{
+  /* For image to be in a circle */
+  /* to move img to center,padding doesnt work*/
+  margin-left: 31em;
+  width: 20em !important;
+  height: 23em;
+  border-radius: 50%;
+}
+/* To make buttons into circles */
+.circle{
+  /* To mave buttons */
+  margin-bottom: -14px;
+  width: 50px ;
+  height: 30px !important;
+  /* aspect-ratio: 1 ; find out what this does */
+  /* To make circle */
+  border-radius: 50% ;
+}
+/* Contact Section */
+#contact .row{
+  background-color: rgb(18 21 36);
+  border-radius: 30px;
+}
+#footer{
+  background-color: rgb(18 21 36);}
