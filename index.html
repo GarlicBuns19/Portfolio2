@@ -9,23 +9,19 @@
     <!-- Bootstrap css first -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Font -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
-    </style>
-
     <!-- aos animation on scroll for extra effect-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- My own css always last -->
     <link rel="stylesheet" href="./style/style.css">
 
+
 </head>
 <body>
-    <section id="landing">
+    <section>
         <!-- nav section -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(18 21 36);">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: rgb(18 21 36);">
+            <div class="container">
               <a class="navbar-brand text-light" href="#">Ra'ees Benny</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,19 +29,25 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="#landing">Home</a>
+                    <a class="nav-link text-light" href="#landing"><ion-icon name="home-outline"></ion-icon> Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="#about">About</a>
+                    <a class="nav-link text-light" href="#about"><ion-icon name="person-circle-outline"></ion-icon> About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="#skills-education">Skills & Education</a>
+                    <a class="nav-link text-light" href="#skills"><ion-icon name="school-outline"></ion-icon> Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#work-&-education"><ion-icon name="list-outline"></ion-icon>Work & Education</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
         <!-- nav section end -->
+    </section>
+    <br>
+    <section id="landing">
         <div class="container h-70 my-5">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center">
@@ -61,66 +63,176 @@
                         </h2>
                     </div>
                 </div>
-                <div class="col-md-6"
-                data-aos="fade-left"
-                data-aos-offset="550"
-                data-aos-easing="ease-in-sine">
+                <div class="col-md-6" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0">
                     <!-- img fluid for responsive img and makeimage transparent so background standsout -->
                     <img class="img-fluid rpic" src="./images/Raeesedit.png"alt="" >
                 </div>
             </div>
         </div>
     </section>
+
     <section id="about">
         <div class="container">
             <div class="row">
-                <h3 class="text-center mt-5 " data-aos="zoom-in">About Me</h3>
-                <div class="col-md-12 text-center mt-2">
-                    <!-- How I see myself -->
-                    <p data-aos="fade-zoom-in"
-                    data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0">
-                        I am a humble person. I believe that respect is earned through time, hard work, and trust in order to have respect not only for the people close to you but for everyone that you meet. I am a hard worker who wants to get the job done as simply as possible and with the best quality.
-                    </p>
-                    <p data-aos="fade-zoom-in"
-                    data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0">
-                        My passion for computers started when I was 12 years old.I have learnt the knowledge to build a computer and I am still learning more about each component. When I failed to get a place at university, I was down, but a friend told me about Life Choices. I applied and got the opportunity. I want to have the knowledge to develop web applications.
-                    </p>
+                <div class="card-group">
+                    <div class="card">
+                      <!-- <img src="..." class="card-img-top" alt="..."> -->
+                      <div class="card-body">
+                          <!-- About me -->
+                        <h3 class="card-title"data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">Personal Details</h3>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">Full Name</h4>
+                                            <ion-icon name="person-outline"></ion-icon>Ra'ees Benny
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">Date of Birth</h4>
+                                                <ion-icon name="calendar-outline"></ion-icon>26/09/2002
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">Gender</h4>
+                                                <ion-icon name="man-outline"></ion-icon>Male
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">Location</h4>
+                                                <ion-icon name="location-outline"></ion-icon>Athlone
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">Contact Number</h4>
+                                                <ion-icon name="call-outline"></ion-icon></ion-icon>0676145637
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">Email Address</h4>
+                                                <ion-icon name="mail-outline"></ion-icon>raeespbenny@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">Willing to Relocate</h4>
+                                                <ion-icon name="airplane-outline"></ion-icon>No
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">GitHub</h4>
+                                                <a href="https://github.com/GarlicBuns19"><ion-icon name="logo-github"></ion-icon></a>Link when click on icon
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <div data-aos="fade-up"
+                                            data-aos-easing="linear"
+                                            data-aos-duration="1500">
+                                                <h4 class="card-title">LinkedIn</h4>
+                                                <ion-icon name="logo-linkedin"></ion-icon>icon doesnt work yet
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <!-- <img src="..." class="card-img-top" alt="..."> -->
+                      <!-- How i see myself -->
+                      <div class="card-body">
+                        <h3 class="card-title"data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">Bio</h3>
+                        <p class="card-text" data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">I am a humble person. I believe that respect is earned through time, hard work, and trust in order to have respect not only for the people close to you but for everyone that you meet. I am a hard worker who wants to get the job done as simply as possible and with the best quality.
+                        </p>
+                        <p class="card-text" data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">
+                            My passion for computers started when I was 12 years old.I have learnt the knowledge to build a computer and I am still learning more about each component. When I failed to get a place at university, I was down, but a friend told me about Life Choices. I applied and got the opportunity. I want to have the knowledge to develop web applications.
+                        </p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <section id="skills-education">
+    <section id="skills">
         <div class="container">
             <div class="row mt-5">
-                <h3 class="text-center">Skills & Education</h3>
-                <div class="col-3"></div>
-                <div class="col-3 mt-3 ">
-                        <div class="padwords" data-aos="fade-up"
-                        data-aos-duration="3000">
+                <h3 class="text-center">Skills</h3>
+                <div class="card-group">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Soft Skills</h4>
                             <!-- What type of person I am -->
-                        <h4>Soft Skills</h4>
-                        <ul>
-                            <li>
-                                <p>Can Work In a Team</p>
-                            </li>
-                            <li>
-                                <p>Organised</p>
-                            </li>
-                            <li>
-                                <p>Easy To Talk To</p>
-                            </li>
-                            <li>
-                                <p>Good Time Management</p>
-                            </li>
-                        </ul>
-                        </div>
-                            <div class="padwords" data-aos="fade-up"
-                            data-aos-duration="3000">
-                                <!-- Skills in tech and code -->
+                            <ul>
+                                <li>
+                                    Can Work In a Team
+                                </li>
+                                <li>
+                                    Organised
+                                </li>
+                                <li>
+                                    Easy To Talk To
+                                </li>
+                                <li>
+                                    Good Time Management
+                                </li>
+                            </ul>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                            <!-- Skills in tech and code -->
                             <h4>Technical Skills</h4>
                             <ul>
                                 <li>
@@ -136,9 +248,17 @@
                                     <p>I am still learning coding at Life Choices</p>
                                 </li>
                             </ul>
-                            </div>
+                      </div>
+                    </div>
                 </div>
-                <div class="col-3 mt-3 ">
+            </div>
+        </div>
+    </section>
+    <section id="work-&-education">
+        <div class="container">
+            <div class="row mt-5">
+                <h3 class="text-center">Work & Education</h3>
+                <div class="col mt-3 ">
                     <!-- Education level -->
                     <div class="padwords" data-aos="fade-up"
                     data-aos-duration="3000">
@@ -229,21 +349,6 @@
         </div>
       </div>
     </div>
-        <!-- <div class="container">
-            <div class="row text-center mt-5">
-                <h3>Portfolio</h3> -->
-                <!-- Add 1st POrtfolio,rainbow,calculator must still work,need code pen projects -->
-                    <!-- <div class="col-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, animi.</div>
-                    <div class="col-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, animi.</div>
-                    <div class="col-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, animi.</div>
-                    <div class="col-4 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, animi.
-                    </div>
-                    <div class="col-4 p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, animi.
-                    </div>
-                    <div class="col-4 p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, animi.
-                    </div>
-                </div>
-            </div> -->
     </section>
     <section id="testimonials">
         <div class="container my-5">
@@ -267,10 +372,9 @@
                     <img src="./images/Charles (4).JPG" class="d-block w-50 img-fluid img-testimonials" alt="...">
                   </div>
                 </div>
-              
             </div>
             </div>
-            </div>
+        </div>
         </div>
     </section>
     <section id="contact">
@@ -310,7 +414,12 @@
     <script>
       AOS.init();
     </script>
-    
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="./java/type.js"></script>
