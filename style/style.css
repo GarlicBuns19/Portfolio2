@@ -24,7 +24,7 @@ body{
 /* About Section */
 #about{
   /* To give space between section,just see what it does */
-  scroll-margin: 60px;
+  scroll-margin: 90px;
 }
 .card{
   background-color: rgb(18 21 36);
@@ -32,12 +32,15 @@ body{
   /* padding: 0 100px 0 100px; */
 }
 /* Skills and Education Section */
-#skills-education .row{
+#skills .row{
   background-color: rgb(18 21 36);
   border-radius: 30px;
 }
-#skills-education{
-  scroll-margin: 110px;
+#skills{
+  scroll-margin: 90px;
+}
+.card-group ul li{
+  list-style: none;
 }
 .padwords{
   /* padding-left: 200px; */
