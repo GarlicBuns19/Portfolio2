@@ -144,7 +144,11 @@ body{
 }
 /* Footer section */
 #footer{
-  background-color: rgb(18 21 36);}
+  background-color: rgb(18 21 36);
+}
+.icon-size{
+  font-size: 3em;
+}
 
 /* Media Queres for testimonials */
 @media only  screen and (max-width:1024px){
