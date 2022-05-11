@@ -47,29 +47,61 @@ body{
   border-left: 5px solid white;
   border-radius: 14px;
 }
-.padwords h4{
-  padding-left: 5px;
+/* Work-&-Education Section */
+#work-and-education{
+  scroll-margin: 90px;
 }
-/* To remove dots because I dont know how to in bootstrap */
-.list-no-style li{
-  list-style: none;
-}
+
 /* Portfolio Section */
-/* #portfolio .row{
-  background-color: rgb(18 21 36);
-  border-radius: 30px;
-} */
 .projects-container{
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
 }
+/* SIZES IMAGES */
 .projects-container img{
   max-height:400px;
   max-width: 100%;
   flex-grow: 1;
   object-fit: cover;
+  transition: .8s;
+  border-radius: 30px;
+  /* opacity: .5; */
+}
+/* WRAPS AROUND IMG */
+.img-container {
+  position: relative;
+}
+/* BECOMES OPAQUE WHEN HOVER */
+.img-container:hover > img{
+  opacity: .75;
+}
+/* CENTERS BUTTONS IN IMG */
+.btn-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* SETS BTN TO INVISIBLE */
+.img-container .btn-center .btn {
+  visibility: hidden;
+  opacity: 0;
+  transition: .8s;
+}
+/* SHOWS BUTTONS WHEN HOVER */
+.img-container:hover>.btn-center .btn {
+  visibility: visible;
+  opacity: 1;
+}
+.btn-center  a:hover{
+  background-color: rgb(251, 255, 255);
+  color: yellowgreen;
 }
 /* Testimonials Section */
 #testimonials .row{
@@ -110,13 +142,34 @@ body{
   background-color: rgb(18 21 36);
   border-radius: 30px;
 }
+/* Footer section */
 #footer{
   background-color: rgb(18 21 36);}
 
 /* Media Queres for testimonials */
+@media only  screen and (max-width:1024px){
+  .img-testimonials{
+    margin-left:19em;
+  }
+}
 @media only  screen and (max-width:771px){
   .img-testimonials{
     margin-left:7em;
+  }
+}
+@media only  screen and (max-width:776px){
+  .img-testimonials{
+    margin-left:6em;
+  }
+}
+@media only  screen and (max-width:564px){
+  .img-testimonials{
+    margin-left:7em;
+  }
+}
+@media only  screen and (max-width:375px){
+  .img-testimonials{
+    margin-right:5em;
   }
 }
 @media only  screen and (max-width:320px){
