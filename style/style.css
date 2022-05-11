@@ -99,9 +99,13 @@ body{
   visibility: visible;
   opacity: 1;
 }
-.btn-center  a:hover{
-  background-color: rgb(251, 255, 255);
-  color: yellowgreen;
+.btn-center a{
+  background-color:rgb(51 54 70) ;
+  color: rgb(255, 255, 255);
+}
+.btn-center a:hover{
+  background-color: rgb(18 21 36);
+  color: rgb(255, 255, 255);
 }
 /* Testimonials Section */
 #testimonials .row{
