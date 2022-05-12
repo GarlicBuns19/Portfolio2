@@ -4,9 +4,28 @@
   color: white;
   /* font-family: 'Libre Franklin', sans-serif !important; */
 }
+/* [data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
+} */
 body{
-  background-color: rgb(51 54 70);
+  /* background-color: rgb(51 54 70); */
   /* background-image: url(https://wallpaperbat.com/img/255360-dark-space-wallpaper-hd.jpg); */
+}
+
+#particular{
+  position: fixed;
+  background-color: rgb(51 54 70);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 /* Landing Section */
 #landing .row{
@@ -20,6 +39,7 @@ body{
 /* nav bar toggler color */
 .navbar-light .navbar-toggler{
   color: rgb(254, 255, 251);
+  border-color: white;
 }
 /* About Section */
 #about{
@@ -55,6 +75,7 @@ body{
 /* Project Section */
 #projects{
   scroll-margin: 80px;
+  overflow-x: hidden;
 }
 .projects-container{
   display: flex;
@@ -122,7 +143,7 @@ body{
         rgba(51, 54, 70, 0.45)
       ),
       /* bottom, image */
-      url(https://picsum.photos/1920/1080);
+      url(https://images.hdqwalls.com/download/small-memory-8k-2a-1920x1080.jpg);
       background-size: cover;
       background-attachment: fixed;
       background-position:cover;
@@ -148,9 +169,42 @@ body{
   border-radius: 50% ;
 }
 /* Contact Section */
+#contact{
+  scroll-margin: 90px;
+}
 #contact .row{
   background-color: rgb(18 21 36);
   border-radius: 30px;
+}
+#form{
+  margin-left: 400px;
+}
+#Name{
+  border-radius: 10px;
+}
+#Surname{
+  border-radius: 10px;
+}
+#subject{
+  width: 33%;
+  border-radius: 10px;
+}
+#message{
+  width: 188px;
+  border-radius: 10px;
+}
+#submit {
+  background-color: rgb(51 54 70);
+  border-radius: 10px;
+  transition: 0.6s;
+}
+#submit:hover{
+  transform: scale(1.2);
+}
+@media screen and (max-width:426px) {
+  #form{
+    margin-left: 0;
+  }
 }
 /* Footer section */
 #footer{
@@ -159,82 +213,24 @@ body{
 .icon-size{
   font-size: 3em;
 }
-
-/* Media Queres for testimonials */
-@media only  screen and (max-width:1024px){
+#footer a{
+  color: red;
+}
+@media screen and (max-width:425px){
   .img-testimonials{
-    margin-left:19em;
+    margin-left:10em;
+  }
+  #message{
+    width: 250px;
   }
 }
-@media only  screen and (max-width:771px){
-  .img-testimonials{
-    margin-left:7em;
+@media screen and (max-width:375px){
+  #message{
+    width: 192px;
   }
 }
-@media only  screen and (max-width:776px){
-  .img-testimonials{
-    margin-left:6em;
-  }
-}
-@media only  screen and (max-width:564px){
-  .img-testimonials{
-    margin-left:7em;
-  }
-}
-@media only  screen and (max-width:375px){
-  .img-testimonials{
-    margin-right:5em;
-  }
-}
-@media only  screen and (max-width:320px){
+@media screen and (max-width:320px){
   .img-testimonials{
     margin-left:0em;
   }
-}
-/* particles */
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-/* ---- particles.js container ---- */
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #b61924;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-/* ---- stats.js ---- */
-.count-particles{
-  background: blue;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-.js-count-particles{
-  font-size: 1.1em;
-}
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-}
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-.count-particles{
-  border-radius: 0 0 3px 3px;
 }
