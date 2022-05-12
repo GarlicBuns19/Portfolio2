@@ -13,10 +13,10 @@
 .aos-init[data-aos][data-aos].aos-animate {
   transform: unset;
 } */
-body{
-  /* background-color: rgb(51 54 70); */
-  /* background-image: url(https://wallpaperbat.com/img/255360-dark-space-wallpaper-hd.jpg); */
-}
+/* body{
+  background-color: rgb(51 54 70);
+  background-image: url(https://wallpaperbat.com/img/255360-dark-space-wallpaper-hd.jpg);
+} */
 
 #particular{
   position: fixed;
@@ -66,6 +66,9 @@ body{
   /* padding-left: 200px; */
   border-left: 5px solid white;
   border-radius: 14px;
+}
+#li-icon{
+  font-size: 2em;
 }
 /* Work-&-Education Section */
 #work-and-education{
@@ -156,6 +159,7 @@ body{
   width: 20em !important;
   height: 23em;
   border-radius: 50%;
+  /* object-fit makes pic not blur or stretch */
   object-fit: cover;
 }
 /* To make buttons into circles */
@@ -167,6 +171,31 @@ body{
   /* aspect-ratio: 1 ; find out what this does */
   /* To make circle */
   border-radius: 50% ;
+}
+@media screen and (min-width:375px) and (max-width:376px) {
+  .img-testimonials{
+    margin-left:2em;
+  }
+}
+@media screen and (min-width:425px) and (max-width:426px) {
+  .img-testimonials{
+    margin-left:3em;
+  }
+}
+@media screen and (max-width:320px){
+  .img-testimonials{
+    margin-left:0em;
+  }
+}
+@media screen and (min-width:768px) and (max-width:769px) {
+  .img-testimonials{
+    margin-left:12em;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1025px) {
+  .img-testimonials{
+    margin-left:19em;
+  }
 }
 /* Contact Section */
 #contact{
@@ -185,8 +214,7 @@ body{
 #Surname{
   border-radius: 10px;
 }
-#subject{
-  width: 33%;
+#Email{
   border-radius: 10px;
 }
 #message{
@@ -201,10 +229,41 @@ body{
 #submit:hover{
   transform: scale(1.2);
 }
-@media screen and (max-width:426px) {
+@media screen and (min-width:320px) and (max-width:321px) {
   #form{
-    margin-left: 0;
+    margin-left: 23px;
   }
+}
+@media screen and (max-width:375px){
+  #message{
+    width: 192px;
+  }
+}
+@media screen and (min-width:375px) and (max-width:376px) {
+  #message{
+    width: 187px;
+  }
+  #form{
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width:425px) and (max-width:426px) {
+  #form{
+    margin-left: 90px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:769px) {
+  #form{
+    margin-left: 23px;
+  }
+  #contact h2{
+    margin-right: 194px;
+  }
+}
+@media screen and (min-width:1024px) and (max-width:1025px) {
+  #form {
+    margin-left: 240px;
+}
 }
 /* Footer section */
 #footer{
@@ -215,22 +274,4 @@ body{
 }
 #footer a{
   color: red;
-}
-@media screen and (max-width:425px){
-  .img-testimonials{
-    margin-left:10em;
-  }
-  #message{
-    width: 250px;
-  }
-}
-@media screen and (max-width:375px){
-  #message{
-    width: 192px;
-  }
-}
-@media screen and (max-width:320px){
-  .img-testimonials{
-    margin-left:0em;
-  }
 }
