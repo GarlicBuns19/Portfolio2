@@ -269,7 +269,8 @@
     margin-left: 23px;
   }
 }
-@media screen and (max-width:375px){
+/* for my phone samsung J5 prime */
+@media screen and (min-width:360px) and (max-width:361px){
   #message{
     width: 202px;
   }
