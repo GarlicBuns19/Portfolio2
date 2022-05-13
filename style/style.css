@@ -286,7 +286,7 @@
     transform: rotate(270deg);
     object-position: 20px;
   }
-  #projects{
+  body{
     overflow-x: hidden;
   }
 }
