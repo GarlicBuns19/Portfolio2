@@ -285,7 +285,7 @@
 }
   #img-up{
     transform: rotate(270deg);
-    object-position: 0 20px;
+    object-position: 0 -10px;
   }
   #projects{
     overflow-x: hidden;
