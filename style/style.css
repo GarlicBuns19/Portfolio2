@@ -253,7 +253,7 @@
   border-radius: 10px;
 }
 #message{
-  width: 188px;
+  width: 200px;
   border-radius: 10px;
 }
 #submit {
@@ -271,12 +271,12 @@
 }
 @media screen and (max-width:375px){
   #message{
-    width: 192px;
+    width: 202px;
   }
 }
 @media screen and (min-width:375px) and (max-width:376px) {
   #message{
-    width: 187px;
+    width: 199px;
   }
   #form{
     margin-left: 50px;
@@ -286,18 +286,21 @@
   #form{
     margin-left: 90px;
   }
+  #message{
+    width: 199px;
+  }
 }
 @media screen and (min-width:768px) and (max-width:769px) {
   #form{
-    margin-left: 23px;
+    margin-left: -9px;
   }
   #contact h2{
-    margin-right: 194px;
+    margin-right: 226px;
   }
 }
 @media screen and (min-width:1024px) and (max-width:1025px) {
   #form {
-    margin-left: 240px;
+    margin-left: 231px;
 }
 }
 /* Footer section */
