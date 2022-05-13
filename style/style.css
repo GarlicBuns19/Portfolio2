@@ -273,6 +273,15 @@
   #message{
     width: 202px;
   }
+  #form{
+    margin-left: 0;
+  }
+  .img-testimonials{
+    margin-left:0;
+  }
+  .carousel-item {
+    height: 440px;
+}
 }
 @media screen and (min-width:375px) and (max-width:376px) {
   #message{
