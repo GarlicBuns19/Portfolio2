@@ -284,6 +284,7 @@
 }
   #img-up{
     transform: rotate(180deg);
+    object-position: 0px 20px;
   }
 }
 @media screen and (min-width:375px) and (max-width:376px) {
