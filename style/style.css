@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
 *{
   color: white;
-  /* font-family: 'Libre Franklin', sans-serif !important; */
+  font-family: 'Libre Franklin', sans-serif !important;
 }
 /* [data-aos] {
   pointer-events: none;
