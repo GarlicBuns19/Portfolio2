@@ -29,7 +29,9 @@
 }
 /* Landing Section */
 #landing .row{
-  background-color: rgb(18 21 36);  border-radius: 30px;
+  background-color: rgb(18 21 36);
+  border-radius: 30px;
+  margin: 0;
 }
 .rpic{
   /* My img of Myself */
@@ -61,6 +63,7 @@
 #skills .row{
   background-color: rgb(18 21 36);
   border-radius: 30px;
+  margin: 0;
 }
 #skills{
   scroll-margin: 90px;
@@ -91,6 +94,10 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
+}
+.img-size{
+  height:150px !important;
+  width: 100%;
 }
 /* SIZES IMAGES */
 .projects-container img{
@@ -144,6 +151,9 @@
 #testimonials{
   scroll-margin: 60px;
 }
+.carousel-item{
+  height: 420px;
+}
 #testimonials .row{
     background:
       /* top, transparent red, faked with gradient */
@@ -157,6 +167,7 @@
       background-attachment: fixed;
       background-position:cover;
       border-radius: 30px;
+      margin: 0;
 }
 .img-testimonials{
   /* For image to be in a circle */
@@ -182,26 +193,44 @@
   .img-testimonials{
     margin-left:2em;
   }
+  .carousel-item {
+    height: 506px;
+}
 }
 @media screen and (min-width:425px) and (max-width:426px) {
   .img-testimonials{
     margin-left:3em;
   }
+  .carousel-item {
+    height: 485px;
+}
 }
 @media screen and (max-width:320px){
   .img-testimonials{
     margin-left:0em;
   }
+  .carousel-item {
+    height: 533px;
+}
 }
 @media screen and (min-width:768px) and (max-width:769px) {
   .img-testimonials{
     margin-left:12em;
   }
+  .carousel-item {
+    height: 442px;
+}
+.img-size {
+  height: 96px !important;
+}
 }
 @media screen and (min-width:1024px) and (max-width:1025px) {
   .img-testimonials{
     margin-left:19em;
   }
+  .carousel-item {
+    height: 440px;
+}
 }
 /* Contact Section */
 #contact{
@@ -280,4 +309,10 @@
 }
 #footer a{
   color: red;
+}
+#gitbig2{
+  transition: 0.6s;
+}
+#gitbig2:hover{
+  transform: scale(1.2);
 }
