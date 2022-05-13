@@ -79,6 +79,12 @@
 #li-icon{
   font-size: 2em;
 }
+.li-icon-scale{
+  transition: 0.6s;
+}
+.li-icon-scale:hover{
+  transform: scale(1.2);
+}
 /* Work-&-Education Section */
 #work-and-education{
   scroll-margin: 90px;
