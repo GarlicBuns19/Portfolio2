@@ -283,7 +283,7 @@
     height: 640px;
 }
   #img-up{
-    transform: rotate(90deg);
+    transform: rotate(270deg);
   }
 }
 @media screen and (min-width:375px) and (max-width:376px) {
